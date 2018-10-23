@@ -15,3 +15,17 @@ LeetCode---Medium
             elif not stack or item >= stack[-1]:
                 dfs(remain - item, stack + [item])
 ```
+#### No. 40. DFS
+``` python
+        def dfs(x, remain, stack):
+            for c,i in enumerate(x):
+                if c >= 1 and x[c] == x[c - 1]: #去除重复的元素
+                    continue
+                if remain - i == 0:
+                    res.append(stack+[i])
+                    break
+                elif remain - i < 0:
+                    break
+                else:
+                    dfs(x[c+1:], remain - i, stack + [i])
+```
