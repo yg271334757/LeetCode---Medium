@@ -19,11 +19,7 @@ LeetCode---Medium
 ``` python
         def dfs(x, remain, stack):
             for c,i in enumerate(x):
-<<<<<<< HEAD
                 if c >= 1 and x[c] == x[c - 1]: #去除重复的元素
-=======
-                if c >= 1 and x[c] == x[c - 1]:
->>>>>>> 67f293aed4eea6e361a4f1c13030cf892200efba
                     continue
                 if remain - i == 0:
                     res.append(stack+[i])
