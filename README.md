@@ -68,3 +68,4 @@ class Solution:
         dfs(nums, [])
         return res
 ```
+#### No. 49. Hashmap的key不能是列表
