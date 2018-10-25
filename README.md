@@ -69,3 +69,4 @@ class Solution:
         return res
 ```
 #### No. 49. Hashmap的key不能是列表
+#### No. 71. Stack way
