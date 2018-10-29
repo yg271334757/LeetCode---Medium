@@ -71,3 +71,27 @@ class Solution:
 #### No. 49. Hashmap的key不能是列表
 #### No. 71. Stack way
 #### No. 79. 矩阵相邻元素((-1,0),(1,0),(0,-1),(0,1))
+#### No. 80. 比较好的方法是:
+``` py
+class Solution:
+    def removeDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums:
+            return 0
+        
+        idx = 0
+        count = 0
+        for i in range(len(nums)):
+            if i > 0 and nums[i] == nums[i-1]:
+                count += 1
+                if count >= 3:
+                    continue
+            else:
+                count = 1
+            nums[idx] = nums[i]
+            idx += 1
+        return idx
+```
