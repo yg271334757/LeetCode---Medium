@@ -1,8 +1,8 @@
 # LeetCode---Medium
-#### [No. 3.](https://leetcode.com/problems/longest-substring-without-repeating-characters/)  使用栈的方法
-#### No. 31. 原来函数还可以这样用
-#### No. 36. 创建二维数组： a = [[[0] for _ in range(3)] for _ in range(3)]
-#### No. 39. DFS
+#### [No. 3.](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)  使用栈的方法
+#### [No. 31.](https://leetcode-cn.com/problems/next-permutation/) 原来函数还可以这样用
+#### [No. 36.](https://leetcode-cn.com/problems/valid-sudoku/description/) 创建二维数组： a = [[[0] for _ in range(3)] for _ in range(3)]
+#### [No. 39.](https://leetcode-cn.com/problems/combination-sum/) DFS
 ``` python
     def dfs(remain, stack):
         if not remain:
@@ -14,7 +14,7 @@
             elif not stack or item >= stack[-1]:
                 dfs(remain - item, stack + [item])
 ```
-#### No. 40. DFS
+#### [No. 40.](https://leetcode-cn.com/problems/combination-sum-ii/) DFS
 ``` python
         def dfs(x, remain, stack):
             for c,i in enumerate(x):
@@ -28,7 +28,7 @@
                 else:
                     dfs(x[c+1:], remain - i, stack + [i])
 ```
-#### No. 46. 全排列，也可以用DFS的方法:
+#### [No. 46.](https://leetcode-cn.com/problems/permutations/description/) 全排列，也可以用DFS的方法:
 ``` python
 class Solution:
     def permute(self, nums):
@@ -47,7 +47,7 @@ class Solution:
         dfs(nums, [])
         return res
 ```
-#### No. 47. 去重：
+#### [No. 47.](https://leetcode-cn.com/problems/permutations-ii/) 去重：
 ``` py
 class Solution:
     def permuteUnique(self, nums):
@@ -68,10 +68,10 @@ class Solution:
         dfs(nums, [])
         return res
 ```
-#### No. 49. Hashmap的key不能是列表
-#### No. 71. Stack way
-#### No. 79. 矩阵相邻元素((-1,0),(1,0),(0,-1),(0,1))
-#### No. 80. 比较好的方法是:
+#### [No. 49.](https://leetcode-cn.com/problems/group-anagrams/) Hashmap的key不能是列表
+#### [No. 71.](https://leetcode-cn.com/problems/simplify-path/) Stack way
+#### [No. 79.](https://leetcode-cn.com/problems/word-search/) 矩阵相邻元素((-1,0),(1,0),(0,-1),(0,1))
+#### [No. 80.](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/) 比较好的方法是:
 ``` py
 class Solution:
     def removeDuplicates(self, nums):
