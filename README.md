@@ -95,7 +95,7 @@ class Solution:
             idx += 1
         return idx
 ```
-####[No. 130.](https://leetcode-cn.com/problems/surrounded-regions/description/) DFS:
+#### [No. 130.](https://leetcode-cn.com/problems/surrounded-regions/description/) DFS:
 ```py
 r = len(board)
         c = len(board[0])
