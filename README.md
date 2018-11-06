@@ -145,3 +145,13 @@ class Solution:
         dfs(s, [])
         return res
 ```
+#### [No. 179.](https://leetcode-cn.com/problems/largest-number/description/) 排序key的使用方法,配合lambda使用：
+```py
+class Solution:
+    def largestNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: str
+        """
+        return str(int(''.join(sorted(map(str, nums), key=lambda s:s*6)[::-1])))
+```
