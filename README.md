@@ -214,3 +214,4 @@ class Solution:
                     grid[p][q] = '0'
         return count
 ```
+#### [No. 209.](https://leetcode-cn.com/problems/minimum-size-subarray-sum/description/) 滑动窗口，一般用来解决连续数组的问题。
