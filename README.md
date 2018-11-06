@@ -198,7 +198,7 @@ class Solution:
                 count += 1
                 dq = deque([(i, j)])
                 while dq:
-                    p, q = dq.popleft()
+                    p, q = dq.popleft() # 将访问过的元素置'0'
                     if p - 1 >= 0 and grid[p-1][q] == '1' and (p-1, q) not in dq:
                         dq.append((p-1, q))
                         grid[p-1][q] = '0'
