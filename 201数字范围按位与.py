@@ -5,7 +5,7 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        res = n
+        res = n # dont understand
         while res > m:
             res = res & (res - 1)
         return res
