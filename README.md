@@ -216,7 +216,7 @@ class Solution:
 ```
 #### [No. 209.](https://leetcode-cn.com/problems/minimum-size-subarray-sum/description/) 滑动窗口，一般用来解决连续数组的问题。
 #### [No. 213.](https://leetcode-cn.com/problems/house-robber-ii/description/) 还可以使用滚动数组来进行优化。
-`*以上的代码需要O(N)空间，利用滚动数组可以实现O(1)空间, 滚动数组针对这一类的问题，当dependency只取决于k个数的时候，一种方法是可以定义k个函数来作为迭代的数据存储，另一种方法就是开辟一个长度为k的数组，然后在迭代的时候，更新对应的res[i%k]即可。*`
+>**以上的代码需要O(N)空间，利用滚动数组可以实现O(1)空间, 滚动数组针对这一类的问题，当dependency只取决于k个数的时候，一种方法是可以定义k个函数来作为迭代的数据存储，另一种方法就是开辟一个长度为k的数组，然后在迭代的时候，更新对应的```py res[i%k] ```即可。**
 ```py
 def rubber(x):
     res = [0] * 2 #相邻，即两个
