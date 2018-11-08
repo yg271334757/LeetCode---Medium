@@ -227,4 +227,4 @@ def rubber(x):
     return max(res)
 ```
 #### [No. 221.](https://leetcode-cn.com/problems/maximal-square/description/)
-![image](https://github.com/yg271334757/LeetCode---Medium/tree/master/images/221.jpeg)
+![image](https://github.com/yg271334757/LeetCode---Medium/blob/master/images/221.jpeg)
