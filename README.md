@@ -228,3 +228,23 @@ def rubber(x):
 ```
 #### [No. 221.](https://leetcode-cn.com/problems/maximal-square/description/)
 ![image](https://github.com/yg271334757/LeetCode---Medium/blob/master/images/221.jpeg)
+#### [No. 241.](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/description/)分治法：
+```py
+def diffWaysToCompute(input):
+    n = len(input)
+    if n == 0:
+        return []
+    elif input.isdigit():
+        return [int(input)]
+    dic = {"+":lambda x,y: x+y, "-":lambda x,y: x-y, "*":lambda x,y: x*y}
+    res = []
+    for i in range(n):
+        if not input[i].isdigit():
+            op = input[i]
+            left = diffWaysToCompute(input[:i])
+            right = diffWaysToCompute(input[i+1:])
+            for l in left:
+                for r in right:
+                    res.append(dic[op](l,r))
+    return res
+```
